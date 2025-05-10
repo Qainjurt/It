@@ -1,0 +1,122 @@
+/* Негізгі стильдер */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #FFD700; /* Алтын түс */
+}
+
+a {
+    color: #00C4CC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+/* Header */
+header {
+    background-color: #1F1F1F;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Форма стилі */
+form {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #00C4CC;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD700;
+}
+
+/* Форум беті */
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+    color: #FFD700;
+}
+
+.post p {
+    color: #B0B0B0;
+}
+
+.post .post-content {
+    margin-top: 10px;
+    color: #D3D3D3;
+}
+
+/* Жоғарыда сілтемелер */
+.navbar a {
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    color: #00C4CC;
+}
+
+footer {
+    background-color: #1F1F1F;
+    padding: 10px 0;
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 14px;
+}
+
+/* Түсірілім */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
