@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">IT Hub</h1>
+    <nav class="space-x-4">
+      <a href="/" class="hover:text-yellow-400">Басты</a>
+      <a href="/forum" class="hover:text-yellow-400">Форум</a>
+      {% if session.get('user_id') %}
+        <a href="/logout" class="text-red-400">Шығу</a>
+      {% else %}
+        <a href="/login" class="text-green-400">Кіру</a>
+        <a href="/register" class="text-blue-400">Тіркелу</a>
+      {% endif %}
+    </nav>
+  </header>
+  <main class="p-6">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
