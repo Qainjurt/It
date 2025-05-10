@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Форум{% endblock %}
+
+{% block content %}
+  <h2 class="text-2xl text-center">Форум</h2>
+  <form method="POST" class="max-w-lg mx-auto mt-4">
+    <input type="text" name="title" placeholder="Пост тақырыбы" required>
+    <textarea name="content" placeholder="Пост мазмұны" required></textarea>
+    <input type="submit" value="Жариялау">
+  </form>
+
+  <div class="posts mt-6">
+    {% for post in posts %}
+      <div class="post">
+        <h3>{{ post[0] }}</h3>
+        <p class="post-content">{{ post[1] }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
